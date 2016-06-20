@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/text_id"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:capitalize="characters"
+        android:text="@string/name"
+        android:textAlignment="center"
+        android:textColor="#00c7a0"
+        android:textColorHighlight="@android:color/primary_text_dark"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="50dp"/>
+
+    <EditText
+        android:id="@+id/firstNameView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/firstName" />
+
+    <EditText
+        android:id="@+id/lastNameView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/lastName" />
+
+    <EditText
+        android:id="@+id/marksView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="@string/marks" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp" >
+
+    <TextView
+        android:id="@+id/deleteLabel"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:capitalize="characters"
+        android:textColor="#000000"
+        android:text="@string/label"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/deleteView"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deleteLabel"
+        android:inputType="number"
+        android:hint="@string/deleteId" />
+
+        <ScrollView android:id="@+id/textAreaScrol"
+            android:layout_width="200dp"
+            android:layout_height="fill_parent"
+            android:layout_x="0px"
+            android:layout_y="25px"
+            android:layout_below="@+id/deleteView"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical">
+            <TextView
+                android:id="@+id/viewDetails"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignLeft="@+id/fbedittext"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/fbedittext"
+                android:text=" " />
+        </ScrollView>
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/delete"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/deleteBtnName" />
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/deleteBtn"
+            android:drawableLeft="@drawable/add"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/addBtnName" />
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/addBtn"
+            android:drawableLeft="@drawable/search"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/searchBtnName" />
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/searchBtn"
+            android:drawableLeft="@drawable/update"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/updateBtnName" />
+        <Button
+            android:id="@+id/viewBtn"
+            android:layout_width="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/updateBtn"
+            android:drawableLeft="@drawable/view"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/viewBtnName" />
+
+    </RelativeLayout>
+</LinearLayout>
